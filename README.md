@@ -1,32 +1,187 @@
 # HR-Project
 
 tblOrganization
-tblOrganiUnit
+    OrgID
+    OrgCode
+    OrgName
+    OrgNameEng
+    OrgBranchTax
+    OrgTaxID
+    OrgBranchSoc
+    OrgSocID
+    OrgFundCode
+    OrgFundID
+    OrgLogoImg
+   	AddressName
+    AddressNo	
+    GroupNo	
+    Building	
+    RoomNo	
+    FloorNo	
+    Vilage	
+    Lane	
+    Street	
+    District	
+    Amphur	
+    Province	
+    PostalCode	
+    Country	
+    ContactName	
+    MobilePhone	
+    Phone1	
+    Phone2	
+    Phone3	
+    Fax	
+    Email1	
+    Email2	
+    Email3	
+    Website	
+    Remark	
+    CreatedBy	
+    CreatedDate
+    EditBy	
+    EditDate				
+
+tblDepartment
+    DepID
+    OrgID
+    DepCode
+    DepName
+    DepNameEng
+    ParentDepID
+    Remark
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 
 -- Employee
 tblEmployee
+    EmpID
+    EmpCode
+    EmpTitelName
+    EmpFirstName
+    EmpLastName
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
+
 tblAddress
+    AddressID
+    AddressType
+    AddressName
+    AddressNo
+    GroupNo
+    Building
+    RoomNo
+    FloorNo
+    Vilage
+    Lane
+    Street
+    District
+    Amphur
+    Province
+    PostalCode
+    Country
+    ContactName
+    MobilePhone
+    Phone1
+    Phone2
+    Phone3
+    Fax
+    Email1
+    Email2
+    Email3
+    Website
+    Remark
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
+
 tblEducation
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
+
 tblEmpFund
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpSocial
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmployment
-tblEmploymentDetail 
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
+tblEmploymentDetail
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpReduceTax  --ข้อมูลการลดหย่อนภาษี
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpHealth --ข้อมูลสุขภาพ
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpContract --สัญญาจ้าง
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpGuarantee --สัญญาค้ำประกัน
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpExperience --ประสบการณ์ทำงาน
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpWorkDetail --ผลงานดีเด่น/การลงโทษ
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpPromote
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpPromoteDetail
 tblEmpResignation
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblEmpResignationDetail
 
 -- Payroll
 tblPayPayment
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblPayPaymentDetail
 
 tblPayProcessPayroll
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblPayProcesspayrollDetail
 tblPayProcessFund
 tblPayProcessSocial
@@ -34,7 +189,23 @@ tblPayProcessSocial
 
 -- Setting
 tblIncomeDeduct
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblPosition
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblJobsType
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblPayPeriod
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
 tblPayPeriodDetail
