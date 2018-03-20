@@ -62,6 +62,18 @@ tblEmployee
     EmpTitelName
     EmpFirstName
     EmpLastName
+    EmpImage
+    Gender
+    Weight
+    Height
+    Nationalism
+    Nationality
+    Religion
+    BirthDate
+    Marry
+    Military
+    IDCard
+    PeriodPaymentID
     CreatedBy
     CreatedDate
     EditBy
@@ -101,52 +113,167 @@ tblAddress
     EditDate
 
 tblEducation
+    EduID
+    Education
+    Institution
+    Qualification
+    Branch
+    YearEnd
+    Remark
     CreatedBy
     CreatedDate
     EditBy
     EditDate
 
 tblEmpFund
+    EmpFundID
+    FundID
+    EmpID
+    FundStartDate
+    FundEndDate
+    AccMemberCode
+    ProvEmployerDeduct
+    ProvEmployeeDeduct
+    ProvBankNo
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblEmpSocial
+    SocialSecurityID
+    EmpID
+    IsSocialReduce
+    SocialNo
+    RegisterDate
+    Clinic
+    IsBeforeSocial
+    BeforeOrgName
+    BeginSocial
+    BeginIncome
+    BeginTaxs
+    BeginSavingFunds
+    WorkerReduce
+    EmployerReduce
+    AccumulateIncome
+    AccumulateSocial
+    AccumulateFunds
+    AccumulateTaxs
+    ReduceType
+    PaymentPercent
+    IncomeDeductID
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblEmployment
+    EmploymentID
+    EmpID
+    StartDate
+    EndDate
+    PositionID
+    DepID
+    PromoteID
+    EmpType
+    PrvEmploymentID
+    Salary
+    OrgID
+    PosiID
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblEmploymentDetail
+    EmploymentDetailID
+    EmploymentID
+    ListNo
+    IncomeDeductID
+    IncomeDeductAmount
+    IncomeDeductType
+    PaymentType
+    PaymentPeriod
+    StartDate
+    EndDate
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblEmpReduceTax  --ข้อมูลการลดหย่อนภาษี
+    TaxReduceID
+    EmpID
+    SpouseDivide
+    SpouseReduce
+    ChildStudy
+    ChildNotStudy
+    InsuraAmount
+    SpouseInsuraAmnt
+    DonationCharity
+    DonationEducate
+    InterestLoan
+    RmfDeposit
+    LtfDeposit
+    CompensationLaw
+    GpfDeposit
+    AssistInstructor
+    FatherIdentNo
+    FatherReduAmnt
+    MotherIdentNo
+    MotherReduAmnt
+    FatherHealthInsurance
+    MatherHealthInsurance
+    LongInsurance
+    IsTwoBenefits
     CreatedBy
     CreatedDate
     EditBy
     EditDate
-tblEmpHealth --ข้อมูลสุขภาพ
-    CreatedBy
-    CreatedDate
-    EditBy
-    EditDate
+
 tblEmpContract --สัญญาจ้าง
+    ContractID
+    EmpID
+    ContractNo
+    ContractDate
+    ContractStartDate
+    ContractEndDate
+    MakeContractAt
+    ContractFormat
+    ContractType
+    WageRate
+    Remark
     CreatedBy
     CreatedDate
     EditBy
     EditDate
 tblEmpGuarantee --สัญญาค้ำประกัน
+    GuaranteeID
+    EmpID
+    GuaranteeNo
+    GuaranteeDate
+    GuaranteeStartDate
+    GuaranteeEndDate
+    GuaranteeType
+    FinancialAmount
+    Remark
     CreatedBy
     CreatedDate
     EditBy
     EditDate
 tblEmpExperience --ประสบการณ์ทำงาน
+    ExperienceID
+    EmpID
+    ListNo
+    Organization
+    BusinessType
+    Position
+    WorkCategory
+    StartDate
+    EndDate
+    NewlyRateOfSalary
+    ReasonQuit
+    Description
     CreatedBy
     CreatedDate
     EditBy
@@ -157,34 +284,137 @@ tblEmpWorkDetail --ผลงานดีเด่น/การลงโทษ
     EditBy
     EditDate
 tblEmpPromote
+    PromoteID
+    PromoteDocNo
+    PromoteDate
+    EffectDate
+    Remark
+    EmpID
+    IsEmpTypePromote
+    FromEmpType
+    EmpType
+    IsSalaryPromote
+    BeforeWageRate
+    AdjustAmnt
+    AdjustPercentage
+    AfterAdjustAmnt
+    IsOrgPromote
+    OrgID
+    IsDepartmentPromote
+    DepID
+    IsPositionPromote
+    PositionID    
     CreatedBy
     CreatedDate
     EditBy
     EditDate
-tblEmpPromoteDetail
+
 tblEmpResignation
+    ResignationID
+    EmpID
+    ResignationNo
+    ResignationDate
+    EffectDate
+    ResignationType
+    Detail
+    IsCalcLastPayment
+    CalcLastPaymentType
+    ResignEffectDate
+    IsCalcSalary
+    IsCalclastOccasionalIncDec
     CreatedBy
     CreatedDate
     EditBy
     EditDate
-tblEmpResignationDetail
 
 -- Payroll
 tblPayPayment
+    PayPaymentID
+    PayPaymentDocNO
+    PayPaymentDate
+    EffectDate
+    PayPaymentType
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblPayPaymentDetail
+    PayPaymentDetailID
+    PayPaymentID
+    EmpID
+    IncID
+    ListNo
+    Value
+    RateofUnit
+    EmpIncome
+    EmpDeduct
+    IsProcess
+
 
 tblPayProcessPayroll
+    PayProcessPayrollID
+    OrgID
+    EmpID
+    PayPeriodDetailID
+    DateStamp
+    Salary
+    AnnualIncome
+    OccasionalIncome
+    TotalIncome
+    AnnualDeduct
+    OccasionalDeduct
+    ProvidentFund
+    ProvidentFundEmployer
+    Social
+    SocialEmployer
+    EmpPaytax
+    EmployerPayTax
+    TotalDeduct
+    TotalIncome
+    NetIncome
+    BaseTaxAnnualIncome
+    BaseTaxOccaIncome
+    BaseCalSocial
+    BaseCalProv
+    Basetax401
+    Basetax402
+    tax401
+    tax402
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblPayProcesspayrollDetail
+    PayProcesspayrollDetailID
+    PayProcessPayrollID    
+    ListNo
+    IncID
+    PayPaymentID
+    EmpID
+    PayPeriodDetailID
+    Value
+    RateOfUnit
+    Income
+    Deduct
+
 tblPayProcessFund
+    ProcessPayrollFundID
+    PayProcessPayrollID
+    PayPeriodDetailID
+    EmpID
+    ProvidentFundRateID
+    Value
+    ValueEmployer
+
 tblPayProcessSocial
+    PayProcessSocialID
+    PayProcessPayrollID
+    EmpID
+    IncID
+    Income
+    Deduct
 
 
 -- Setting
@@ -204,8 +434,21 @@ tblJobsType
     EditBy
     EditDate
 tblPayPeriod
+    PayPeriodID
+    PayPeriodName
+    PayPeriodYear
+    PayPeriodType
     CreatedBy
     CreatedDate
     EditBy
     EditDate
 tblPayPeriodDetail
+    PayPeriodDetailID
+    PayPeriodID
+    ListNO
+    MonthName
+    StartDate
+    EndDate
+    PayDate
+    CalculateType
+    IsClose
