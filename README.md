@@ -179,7 +179,7 @@ tblEmployment
     PrvEmploymentID
     Salary
     OrgID
-    PosiID
+    PositionID
     CreatedBy
     CreatedDate
     EditBy
@@ -247,6 +247,7 @@ tblEmpContract --สัญญาจ้าง
     CreatedDate
     EditBy
     EditDate
+
 tblEmpGuarantee --สัญญาค้ำประกัน
     GuaranteeID
     EmpID
@@ -261,6 +262,7 @@ tblEmpGuarantee --สัญญาค้ำประกัน
     CreatedDate
     EditBy
     EditDate
+
 tblEmpExperience --ประสบการณ์ทำงาน
     ExperienceID
     EmpID
@@ -278,11 +280,13 @@ tblEmpExperience --ประสบการณ์ทำงาน
     CreatedDate
     EditBy
     EditDate
+
 tblEmpWorkDetail --ผลงานดีเด่น/การลงโทษ
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblEmpPromote
     PromoteID
     PromoteDocNo
@@ -404,7 +408,7 @@ tblPayProcessFund
     PayProcessPayrollID
     PayPeriodDetailID
     EmpID
-    ProvidentFundRateID
+    EmpFundID
     Value
     ValueEmployer
 
@@ -419,20 +423,56 @@ tblPayProcessSocial
 
 -- Setting
 tblIncomeDeduct
+    IncID
+    IncCode
+    IncName
+    IncNameEng
+    CalcMethod
+    Value
+    IncomeDeductType
+    IsCalcTax
+    IsCalcSocial
+    IsCalcProvidentfund
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblPosition
+    PositionID
+    PositionCode
+    PositionName
+    PositionNameEng
+    Remark
+    ReportTo
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
 tblJobsType
+    JobID
+    JobCode
+    JobName
+    JobNameEng
+    Remark
     CreatedBy
     CreatedDate
     EditBy
     EditDate
+
+tblFund
+    FundID
+    FundCode
+    FundName
+    FundNameEng
+    FundShortName
+    Remark
+    CreatedBy
+    CreatedDate
+    EditBy
+    EditDate
+
 tblPayPeriod
     PayPeriodID
     PayPeriodName
@@ -442,6 +482,7 @@ tblPayPeriod
     CreatedDate
     EditBy
     EditDate
+
 tblPayPeriodDetail
     PayPeriodDetailID
     PayPeriodID
